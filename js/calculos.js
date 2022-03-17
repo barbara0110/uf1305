@@ -37,7 +37,7 @@ function factorial(nf) {
 
     return factorial;
 }
-
+        // Esta ahora no la estamos usando, usamos mostrarResultados
 function mostrarFactorial(nf) {
     document.getElementById('td21').innerHTML = nf;
     document.getElementById('td22').innerHTML = factorial(nf);
@@ -58,7 +58,7 @@ function multiplosDeHasta (n, m) {
     return mensaje;      
 
 }
-
+        // Esta ahora no la estamos usando, usamos mostrarResultados
 function mostrarMultiplos(n, m) {
     document.getElementById("td11").innerHTML=n;
     document.getElementById("td12").innerHTML=m;

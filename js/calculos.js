@@ -5,9 +5,26 @@ function leerNumero() {
     return num;
 }
 
-function mostrarResultados(nf) {
-    document.getElementById('td21').innerHTML = nf;
-    document.getElementById('td22').innerHTML = factorial(nf);
+// Esta función es genérica para mostrar los resultados de todos los ejercicios
+// Así no haría falta la función mostrarFactorial ni la mostrarMultiplos
+// Serviriía esta función para ambos ejercicios
+
+
+function mostrarResultados(op, n1, n2=0) {
+    switch (op) {
+        case "multiplo":
+            document.getElementById("td11").innerHTML=n1;
+            document.getElementById("td12").innerHTML=n2;
+            document.getElementById("td13").innerHTML= multiplosDeHasta(n1, n2);
+        break;
+
+        case "factorial":
+            document.getElementById('td21').innerHTML = n1;
+            document.getElementById('td22').innerHTML = factorial(n1);
+        break;
+        default:
+    }
+    
 }
 
 // Ejercicio factorial

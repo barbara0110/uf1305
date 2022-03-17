@@ -1,6 +1,7 @@
 // Funcion para leer numeros Reales
+
 function leerNumero() {
-    num = parseInt(prompt("Porfi, escribe un número"));
+    num = parseInt(prompt("Indica un número, por favor"));
     return num;
 }
 
@@ -11,11 +12,6 @@ function mostrarResultados(nf) {
 
 // Ejercicio factorial
 
-function mostrarFactorial(nf) {
-    document.getElementById('td21').innerHTML = nf;
-    document.getElementById('td22').innerHTML = factorial(nf);
-}
-
 function factorial(nf) {
     var factorial = 1;
     for ( i=1; i <= nf; i++ ) {
@@ -24,6 +20,13 @@ function factorial(nf) {
 
     return factorial;
 }
+
+function mostrarFactorial(nf) {
+    document.getElementById('td21').innerHTML = nf;
+    document.getElementById('td22').innerHTML = factorial(nf);
+}
+
+
 
 // Ejercicio múltiplos
 

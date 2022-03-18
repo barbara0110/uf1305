@@ -7,7 +7,7 @@ function leerNumero() {
 
 // Esta función es genérica para mostrar los resultados de todos los ejercicios
 // Así no haría falta la función mostrarFactorial ni la mostrarMultiplos
-// Serviriía esta función para ambos ejercicios
+// Serviriía esta función para ambos ejercicios cambiando los datos que se pasan por parámetro en el onClick
 
 
 function mostrarResultados(op, n1, n2=0) {
@@ -52,12 +52,33 @@ function multiplosDeHasta (n, m) {
     multiplo=0;
     for(i=1; multiplo<m; i++) {
     multiplo= n*i;
-    mensaje = mensaje + multiplo + " ";
+    mensaje = mensaje + multiplo + " "; 
     }
 
-    return mensaje;      
+     return mensaje;      
 
 }
+
+    
+        // Hacer lo mismo que la función anterior pero con un WHILE en vez de que un FOR
+
+        function multiplosDeHasta(n, m) {
+            mensaje= "Los múltiplos de " + n + " hasta " + m + " son: ";
+            multiplo=0;
+            i=1
+            while (multiplo<m) {
+                multiplo=n*i;
+                mensaje = mensaje + multiplo + " ";
+                i++;
+            
+            }
+            return mensaje;   
+
+        }
+            
+
+
+   
         // Esta ahora no la estamos usando, usamos mostrarResultados
 function mostrarMultiplos(n, m) {
     document.getElementById("td11").innerHTML=n;

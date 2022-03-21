@@ -5,6 +5,12 @@
 h1, h2 {
     font-family: 'Indie Flower', cursive;
 }
+h1 {
+    color: rgb(157, 19, 248);
+}
+h2 {
+    color: rgb(26, 77, 243);
+}
 article {
     font-family: 'Roboto', sans-serif;
 }

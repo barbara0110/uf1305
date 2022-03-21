@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios UF1305</title>
+    <link rel="stylesheet" href="../css/calculos.css" />
+    <script src="../js/calculos.js"></script>
+    <script>
+        // Haciendolo así no pedimos el número al usuario, nos lo estamos inventando nosotros
+        // Por eso definimos aquí las variables para despues mostrarlas con document.write
+        // Usando document.write no tenemos interacción con el usuario
+        // Las funciones suelen estar en verbo (infinitivo) y las variables en sustantivo
+        var n = 6;
+        var factorial = factorial(n);
+
+        var a = 5;
+        var b = 30;
+        var tmultiplos = multiplosDeHasta(a, b) ; 
+
+        var x = 7;
+        var y = 100;
+        var suma = sumar(x, y);
+
+        var p1 = 2;
+        var p2 = 5;
+        var producto = multiplicar(p1, p2);
+    </script>
+  
+    <title>Cálculos</title>
+</head>
+<body>
+    <header>
+        <h1>Ejercicios UF1305</h1>
+    </header>
+    <nav></nav>
+    <main>
+        <article class="botones">
+            <h2>Calcular el factorial de un número</h2>
+            <p>
+                <input type="button" onclick="n = leerNumero()" value="Indica un número" />
+            </p>
+        </br>
+            <p>
+                <script>
+                    document.write("El factorial de " + n + " es " + factorial );
+                </script>
+            </p>
+        </article>
+
+        <article class="botones">
+            <h2>Escribir los múltiplos de un número</h2>
+            <p>
+                <input type="button" onclick="a = leerNumero()" value="Indica un número" />
+                <input type="button" onclick="b = leerNumero()" value="Indica un límite" />
+            </p>
+            <p>
+                <script>
+                    document.write(tmultiplos);
+                </script>
+            </p>
+        </article>
+    </br>
+        <article>
+            <h2>Escribir el resultado de la suma de dos número</h2>
+            <p>
+                <script>
+                    document.write("La suma de " + x + " + " + y + " es " + suma);
+                </script>
+            </p>
+        </article>
+    </br>
+        <article>
+            <h2>Escribir el resultado de multiplicar dos números</h2>
+            <p>
+                <script>
+                    document.write("El producto de " + p1 + " y " + p2 + " es " + producto)
+                </script>
+            </p>
+        </article>
+
+    </main>
+    <footer></footer>
+    
+</body>
+</html>

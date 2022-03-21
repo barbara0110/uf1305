@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+
+h1, h2 {
+    font-family: 'Indie Flower', cursive;
+}
+article {
+    font-family: 'Roboto', sans-serif;
+}
 
 table.resultados {
     border-collapse: collapse;
@@ -22,7 +32,7 @@ table.resultados thead {
 
 article.botones input {
     padding: 0.8em 1em;
-    background: linear-gradient(180deg, #fcc03f 0%, #f0f34f 100%);
+    background: linear-gradient(180deg, #fcc03f 0%, #f4f80d 100%);
     transition: all .3s;
     border-radius: 0.5em;
     border-color:rgb(250, 244, 244);

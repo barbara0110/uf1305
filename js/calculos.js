@@ -76,7 +76,20 @@ function multiplosDeHasta (n, m) {
 
         }
             
+// Función para sumar dos números
 
+function sumar(s1, s2) {
+    var suma= s1+s2;
+    return suma;
+
+}
+
+// Función multiplicar dos números
+
+function multiplicar(f1,f2) {
+    var producto= f1*f2;
+    return producto;
+}
 
    
         // Esta ahora no la estamos usando, usamos mostrarResultados
@@ -85,4 +98,3 @@ function mostrarMultiplos(n, m) {
     document.getElementById("td12").innerHTML=m;
     document.getElementById("td13").innerHTML= multiplosDeHasta(n, m);
 }
-

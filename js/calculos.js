@@ -5,6 +5,16 @@ function leerNumero() {
     return num;
 }
 
+// Funcion para leer texto
+
+function leerTexto() {
+    var texto = prompt("Escribe aquí, por favor");
+    return texto;
+
+}
+
+
+
 // Esta función es genérica para mostrar los resultados de todos los ejercicios
 // Así no haría falta la función mostrarFactorial ni la mostrarMultiplos
 // Serviriía esta función para ambos ejercicios cambiando los datos que se pasan por parámetro en el onClick
@@ -97,4 +107,28 @@ function mostrarMultiplos(n, m) {
     document.getElementById("td11").innerHTML=n;
     document.getElementById("td12").innerHTML=m;
     document.getElementById("td13").innerHTML= multiplosDeHasta(n, m);
+}
+
+
+// Función para insertar texto en el html
+
+function mostrarTexto(id, texto) {
+    var elemento= document.getElementById(id);
+    // Insertamos en texto pasado por parámetro al elemento con ID pasado por parámetro
+    elemento.innerHTML = texto;
+
+
+}
+
+// Ahora usamos está función en vez de la anterior
+
+function mostrarInfo(id, tag, info, texto) {
+    var elemento= document.getElementById(id);
+    var etiqueta = "<" + tag +">";
+    etiqueta += info;
+    etiqueta += "</" + tag + "> "
+    etiqueta += texto;
+
+    elemento.innerHTML = etiqueta;
+    
 }

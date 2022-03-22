@@ -11,6 +11,7 @@ h1 {
 h2 {
     color: rgb(44, 220, 243);
 }
+
 article {
     font-family: 'Roboto', sans-serif;
 }
@@ -36,7 +37,7 @@ table.resultados thead {
     
 }
 
-article.botones input {
+article.botones input, article.botones button {
     padding: 0.8em 1em;
     background: linear-gradient(180deg, #fcc03f 0%, #f4f80d 100%);
     transition: all .3s;

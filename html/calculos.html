@@ -71,6 +71,32 @@
                 </script>
             </p>
         </article>
+    </br>
+
+    <!-- Ahora vamos a usar con getElementById  -->
+
+    <article class="botones">
+        <h2>Ejercicios getElementById</h2>
+        <p>
+            <button onclick="pj = leerTexto()">Personaje</button>
+            <button onclick="mostrarInfo('pj1', 'strong', 'Personaje :', pj)">Mostrar personaje</button>
+        </p>
+    
+        <p>
+            <button onclick="ald = leerTexto()">Aldea</button>
+            <button onclick="mostrarInfo('ald1', 'strong', 'Aldea :', ald)">Mostrar aldea</button>
+        </p>
+
+        <p>
+            <button onclick="clan = leerTexto()">Clan</button>
+            <button onclick="mostrarInfo('clan1', 'strong', 'Clan :', clan)">Mostrar clan</button>
+        </p>
+       
+        <p id="pj1"></p>
+        <p id="ald1"></p>
+        <p id="clan1"></p>
+        
+    </article>
 
     </main>
     <footer></footer>

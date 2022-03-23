@@ -84,17 +84,32 @@
     
         <p>
             <button onclick="ald = leerTexto()">Aldea</button>
-            <button onclick="mostrarInfo('ald1', 'strong', 'Aldea :', ald)">Mostrar aldea</button>
+            <button onclick="mostrarInfo('ald1', 'em', 'Aldea :', ald)">Mostrar aldea</button>
         </p>
 
         <p>
             <button onclick="clan = leerTexto()">Clan</button>
             <button onclick="mostrarInfo('clan1', 'strong', 'Clan :', clan)">Mostrar clan</button>
         </p>
+
+        <p>
+            <button onclick="sp = leerTexto()">Superpoder</button>
+            <button onclick="mostrarInfo('sp1', 'strong', 'Superpoder :', sp)">Mostrar Superpoder</button>
+        </p>
+
+<!-- Vamos a hacer un botón que muestre todos los datos a la vez en vez de los 3 botones anteriores -->
+
+        <p>
+            <button onclick="mostrarTodo('datos', pj, ald, clan, sp)">Mostrar datos</button>
+
+        </p>
        
         <p id="pj1"></p>
         <p id="ald1"></p>
         <p id="clan1"></p>
+        <p id="sp1"></p>
+
+        <ul id="datos"></ul>
         
     </article>
 

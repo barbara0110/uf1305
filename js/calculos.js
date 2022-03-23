@@ -120,7 +120,8 @@ function mostrarTexto(id, texto) {
 
 }
 
-// Ahora usamos está función en vez de la anterior
+// Con esta nueva función, cuando el ususario introduce los datos, en vez de escribir en el html solo "Pascasio"
+// Escribirá "Personaje(en negrita): Pascasio"
 
 function mostrarInfo(id, tag, info, texto) {
     var elemento= document.getElementById(id);
@@ -131,4 +132,23 @@ function mostrarInfo(id, tag, info, texto) {
 
     elemento.innerHTML = etiqueta;
     
+}
+
+// Creamos una función nueva para meter toda la info en un solo botón con un Id y que lo escriba en una lista y no en 3 botones
+
+function mostrarTodo(id, personaje, aldea, clan, poder) {
+    var personaje = "<strong>Personaje: </strong>" + personaje;
+    var aldea = "<strong>Aldea: </strong>" + aldea;
+    var clan = "<strong>Clan: </strong>" + clan;
+    var poder = "<strong>Superpoder: </strong>" + poder;
+
+    var lis = "<li>" + personaje + "</li>";
+    lis += "<li>" + aldea + "</li>";
+    lis += "<li>" + clan + "</li>";
+    lis += "<li>" + poder + "</li>";
+
+    var elemento= document.getElementById(id);
+
+    elemento.innerHTML = lis;
+
 }

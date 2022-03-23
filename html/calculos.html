@@ -97,10 +97,16 @@
             <button onclick="mostrarInfo('sp1', 'strong', 'Superpoder :', sp)">Mostrar Superpoder</button>
         </p>
 
+        <p>
+            <button onclick="vidas = leerTexto()">Vidas</button>
+            <button onclick="mostrarInfo('vidas1', 'strong', 'Vidas :', vidas)">Mostrar Vidas</button>
+            
+        </p>
+
 <!-- Vamos a hacer un botón que muestre todos los datos a la vez en vez de los 3 botones anteriores -->
 
         <p>
-            <button onclick="mostrarTodo('datos', pj, ald, clan, sp)">Mostrar datos</button>
+            <button onclick="mostrarTodo('datos', pj, ald, clan, sp, vidas)">Mostrar datos</button>
 
         </p>
        
@@ -108,6 +114,7 @@
         <p id="ald1"></p>
         <p id="clan1"></p>
         <p id="sp1"></p>
+        <p id="vidas1"></p>
 
         <ul id="datos"></ul>
         

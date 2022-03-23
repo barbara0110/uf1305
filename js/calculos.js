@@ -136,16 +136,18 @@ function mostrarInfo(id, tag, info, texto) {
 
 // Creamos una función nueva para meter toda la info en un solo botón con un Id y que lo escriba en una lista y no en 3 botones
 
-function mostrarTodo(id, personaje, aldea, clan, poder) {
+function mostrarTodo(id, personaje, aldea, clan, poder, vidas) {
     var personaje = "<strong>Personaje: </strong>" + personaje;
     var aldea = "<strong>Aldea: </strong>" + aldea;
     var clan = "<strong>Clan: </strong>" + clan;
     var poder = "<strong>Superpoder: </strong>" + poder;
+    var vidas = "<strong>Vidas: </strong>" + vidas;
 
     var lis = "<li>" + personaje + "</li>";
     lis += "<li>" + aldea + "</li>";
     lis += "<li>" + clan + "</li>";
     lis += "<li>" + poder + "</li>";
+    lis += "<li>" + vidas + "</li>";
 
     var elemento= document.getElementById(id);
 

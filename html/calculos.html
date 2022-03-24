@@ -76,7 +76,7 @@
     <!-- Ahora vamos a usar con getElementById  -->
 
     <article class="botones">
-        <h2>Ejercicios getElementById</h2>
+        <h2>Ejercicios getElementById y createElement()</h2>
         <p>
             <button onclick="pj = leerTexto()">Personaje</button>
             <button onclick="mostrarInfo('pj1', 'strong', 'Personaje :', pj)">Mostrar personaje</button>
@@ -109,6 +109,14 @@
             <button onclick="mostrarTodo('datos', pj, ald, clan, sp, vidas)">Mostrar datos</button>
 
         </p>
+
+<!-- Ahora vamos a usar el elemento createElement()-->
+        <p>
+            <button onclick="mostrarLista('datos', pj, ald, clan, sp, vidas)">Mostrar Lista</button>
+
+        </p>
+
+<!-- Creamos los ID -->
        
         <p id="pj1"></p>
         <p id="ald1"></p>
@@ -117,6 +125,7 @@
         <p id="vidas1"></p>
 
         <ul id="datos"></ul>
+
         
     </article>
 

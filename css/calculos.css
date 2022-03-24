@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
 
 
 h1, h2 {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Patrick Hand', cursive;
 }
 h1 {
-    color: rgb(157, 19, 248);
+    color: rgb(155, 14, 250);
 }
 h2 {
-    color: rgb(44, 220, 243);
+    color: rgb(10, 226, 255);
 }
 
 article {
@@ -39,9 +39,9 @@ table.resultados thead {
 
 article.botones input, article.botones button {
     padding: 0.8em 1em;
-    background: linear-gradient(180deg, #fcc03f 0%, #f4f80d 100%);
+    background: linear-gradient(180deg, #f8b014 0%, #f4f818 100%);
     transition: all .3s;
-    border-radius: 0.5em;
+    border-radius: 0.8em;
     border-color:rgb(250, 244, 244);
     font-weight: bold;
     color: rgb(5, 5, 5);

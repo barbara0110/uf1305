@@ -154,3 +154,39 @@ function mostrarTodo(id, personaje, aldea, clan, poder, vidas) {
     elemento.innerHTML = lis;
 
 }
+
+// Ahora vamos a trabajar con el método createElement()
+
+function mostrarLista(id, personaje, aldea, clan, poder, vidas) {
+    var personaje = "<strong>Personaje: </strong>" + personaje;
+    var aldea = "<strong>Aldea: </strong>" + aldea;
+    var clan = "<strong>Clan: </strong>" + clan;
+    var poder = "<strong>Superpoder: </strong>" + poder;
+    var vidas = "<strong>Vidas: </strong>" + vidas;
+
+    //Creamos una instancia de la ul con id="datos"
+    var lista= document.getElementById(id);
+    // Creamos una instancia de un elemento HTML vacio
+    var item = document.createElement("li");
+    // Agregamos contenido a ese elemento HTML li
+    item.innerHTML = personaje;
+    // Insertamos el elemento li y su contenido como último hijo de la ul id="datos"
+    lista.appendChild(item);
+
+    item = document.createElement("li");
+    item.innerHTML = aldea;
+    lista.appendChild(item);
+
+    item = document.createElement("li")
+    item.innerHTML = clan;
+    lista.appendChild(item);
+
+    item = document.createElement("li")
+    item.innerHTML = poder;
+    lista.appendChild(item);
+
+    item = document.createElement("li")
+    item.innerHTML = vidas;
+    lista.appendChild(item);
+
+}
